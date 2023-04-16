@@ -1,0 +1,294 @@
+<!doctype html>
+<html> 
+ <head> 
+  <title>www.nash.com/shop</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,800&amp;display=swap" rel="stylesheet"> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  --main-color: #ff702a;
+  --text-color: #fff;
+  --bg-color: #1e1c2a;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+
+*::selection{
+  background: var(--main-color);
+  color: #fff;
+}
+
+body{
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 170px;
+  background: var(--bg-color);
+}
+
+.logo{
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar a{
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar a:hover{
+  color: var(--main-color);
+  transition: .4s;
+}
+
+#menu-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+section{
+  padding: 70px 17%;
+}
+
+.home{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+
+.home-img img{
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+.home-text h1{
+  font-size: var(--big-font);
+  color: var(--main-color);
+}
+
+.home-text h2{
+  font-size: var(--h2-font);
+  margin: 1rem 0 2rem;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.btn:hover{
+  transform: scale(1.2) translateY(10px);
+  transition: .4s;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+
+.about-img img{
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+}
+
+.about-text span{
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.about-text h2{
+  font-size: var(--h2-font);
+}
+
+.about-text 0{
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7rem;
+}
+
+.heading{
+  text-align: center;
+}
+
+.heading span{
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.heading h2{
+  font-size: var(--h2-font);
+}
+
+.skins-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+
+.box{
+  position: relative;
+  margin-top: 4rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #feeee7;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+
+.box-img{
+  height: 220px;
+  width: 220px;
+}
+
+.box-img {
+  height: 100%;
+  width: 100%;
+}
+
+.box h2{
+  color: var(--bg-color);
+}
+
+.box h3{
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 4px 0 10px;
+}
+
+.box span{
+  font-size: var(--p-font);
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.box .bx{
+  background: var(--main-color);
+  color: var(--text-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  padding: 7px 10px;
+  border-radius: 0 0.5rem 0 0.5rem;
+}</style></head> 
+ <body> 
+  <header> <a href="#" class="logo">Nash</a> 
+   <div class="bx bx-menu" id="menu-icon"></div> 
+   <ul class="navbar"> 
+    <li><a href="#home">Home</a></li> 
+    <li><a href="#about">About</a></li> 
+    <li><a href="#skins">Skins</a></li> 
+    <li><a href="#services">Services</a></li> 
+    <li><a href="#contacts">Contacts</a></li> 
+   </ul> 
+  </header> <!--home---> 
+  <section class="home" id="home"> 
+   <div class="home-text"> 
+    <h1>Nash Shop</h1> 
+    <h2>Buy Cheap<br>MLBB Skins and Diamonds!</h2> <a href="#" class="btn">Daily Discounts!</a> 
+   </div> 
+   <div class="home-img"> 
+    <img src="https://i.ibb.co/2MTfS3v/images-5.jpg"> 
+   </div> 
+  </section> <!--about---> 
+  <section class="about" id="about"> 
+   <div class="about-img"> 
+    <img src="https://i.ibb.co/3kRXVMt/images-6.jpg"> 
+   </div> 
+   <div class="about-text"> <span>About Mobile Legends</span> 
+    <h2>Mobile legends: Bang Bang is <br></h2> 
+    <p>a Multiplayer Online Battle Arena game. It is produced and printed by Shanghai Moonton Technology in Shanghai, China. Archived 2017-10-27 at the Wayback Machine.</p> <a href="#" class="btn">Daily Discounts!</a> 
+   </div> 
+  </section> <!--skins---> 
+  <section class="skins" id="skins"> 
+   <div class="heading"> <span>Available Skins:</span> 
+    <h2>Fast service and cheap prices!</h2> 
+   </div> 
+   <div class="skins-container"> 
+    <div class="box"> 
+     <div class="box-img"> 
+      <img src=""> 
+      <h2>Suggest pwedeng ilagay dito</h2> 
+      <h3>blahblah</h3> 
+      <span><i class="bx bx-cart-alt"></i></span>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div class="box-img"> 
+      <img src=""> 
+      <h2>Suggest pwedeng ilagay dito</h2> 
+      <h3>blahblah</h3> 
+      <span><i class="bx bx-cart-alt"></i></span>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div class="box-img"> 
+      <img src=""> 
+      <h2>Suggest pwedeng ilagay dito</h2> 
+      <h3>blahblah</h3> 
+      <span><i class="bx bx-cart-alt"></i></span>
+     </div> 
+    </div>
+    
+    <!--services--->
+      <section class="services" id="services">
+        <div class="heading">
+            <span>Services</span>
+            <h2>We provide best quality services 24/7!</h2>
+        </div>  
+        
+        <div class="service-container">
+            <div class="s-box">
+                <img src="https://i.ibb.co/jrJsSvw/images-7.jpg">
+            </div>
+        </div>
+      </section>
+   </div> 
+  </section> 
+ 
+</body></html>
